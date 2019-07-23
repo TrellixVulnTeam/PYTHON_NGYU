@@ -12,8 +12,10 @@ for i in range(5):  #  пишу повторения цилка значение
     right_this_minute = datetime.today().minute # этот вызов генерирует значение для присваивания переменной присваиваю переменную и импортирую функцию из субмодуля
 
     if right_this_minute in odds:  # условие если  текущая минута в переменной odds совпадает
-        print("This minute seems a little odd.") # Если уловие верно, сделать вывод
+        # if - оператор истинна или ложь
+        # in - определяет находится ли одна сущность в другой
+        print("This minute seems a little odd.") # Если уловие верно, выполнить вывод
     else:
-        print("Not an odd minute.") # если условие ложно сделать вывод
+        print("Not an odd minute.") # если условие ложно выполнить вывод
 wait_time=random.randint(1, 60)  # любое число от 1 до 60
-time.sleep(wait_time)
+time.sleep(wait_time) # используется sleep  на случайное количество секунд
